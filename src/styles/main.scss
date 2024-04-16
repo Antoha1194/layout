@@ -1,7 +1,34 @@
-$font-size: 1rem;
-$font-color: lch(51 105 40);
+body{
+    margin: 0;
+}
 
-html {
-    font-size: $font-size;
-    color: $font-color;
+.container{
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: content-box;
+}
+.header{
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+}
+
+.navigation{
+    display: flex;
+
+    &__list{
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    &__item{
+        margin: 12px
+    }
+    &__link{
+        font-family: Nunito Sans;
+        font-size: 18px;
+        color: #FDFDFD;
+        text-decoration: none;
+    }
 }
